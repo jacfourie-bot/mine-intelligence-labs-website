@@ -325,3 +325,21 @@ header {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Founder statement */
+.founder-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+  gap: clamp(36px, 6vw, 80px);
+  align-items: start;
+}
+.founder-portrait img { display: block; width: 100%; height: auto; }
+.founder-copy h2 { margin-top: 0; scroll-margin-top: 130px; }
+.founder-copy p { margin: 0 0 24px; color: #4b5c57; }
+.founder-copy .founder-attribution { margin: 36px 0 0; color: var(--ink); }
+.founder-attribution strong, .founder-attribution span { display: block; }
+.founder-attribution span { margin-top: 4px; color: var(--muted); font-size: var(--type-small); }
+@media (max-width: 900px) {
+  .founder-layout { grid-template-columns: 1fr; }
+  .founder-portrait { max-width: 320px; }
+}
