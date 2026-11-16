@@ -329,7 +329,7 @@ header {
 /* Founder statement */
 .founder-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
   gap: clamp(36px, 6vw, 80px);
   align-items: start;
 }
@@ -341,5 +341,5 @@ header {
 .founder-attribution span { margin-top: 4px; color: var(--muted); font-size: var(--type-small); }
 @media (max-width: 900px) {
   .founder-layout { grid-template-columns: 1fr; }
-  .founder-portrait { max-width: 320px; }
+  .founder-portrait { max-width: 240px; }
 }
